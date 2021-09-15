@@ -52,30 +52,25 @@ class MeusTestes(TestCase):
         testarD = Calculadora()
         resultado = testarD.calcular(20,4, 'divisao')
         self.assertEqual(resultado, 5)
+        print ("passou na divisão")
 
     def teste_soma(self):
         testarS = Calculadora()
         resultado = testarS.calcular(1,99,'soma')
         self.assertEqual(resultado, 100)
+        print ("passou na soma")
 
     def teste_subtracao(self):
         testarMenos = Calculadora()
         resultado = testarMenos.calcular(500,499,'subtracao')
         self.assertEqual(resultado, 1)
+        print ("passou na subtração")
     
     def teste_multiplicacao(self):
         testarM = Calculadora()
         resultado = testarM.calcular(8,10,'multiplicacao')
         self.assertEqual(resultado, 80)
-    
-    def teste_divisao(self):
-        testarD = Calculadora()
-        resultado = testarD.calcular(20,4, 'truncada')
-        self.assertEqual(resultado, 0)
-
-calculador = Calculadora()
-usar = calculador.calcular(8,10, 'multiplicacao')
-print (usar)
-
+        print ("passou na multiplicação")
+ 
 if __name__ == '__main__':
     main()
